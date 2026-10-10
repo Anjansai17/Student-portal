@@ -1,0 +1,102 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<!-- Dashboard Cards -->
+<div class="cards">
+
+    <div class="card blue">
+        <h3>Attendance</h3>
+        <h1>89%</h1>
+    </div>
+
+    <div class="card green">
+        <h3>CGPA</h3>
+        <h1>8.40</h1>
+    </div>
+
+    <div class="card orange">
+        <h3>Assignments</h3>
+        <h1>5</h1>
+    </div>
+
+    <div class="card red">
+        <h3>Notifications</h3>
+        <h1>3</h1>
+    </div>
+
+</div>
+
+<!-- Dashboard Grid -->
+<div class="dashboard-grid">
+
+    <!-- Student Profile -->
+    <div class="box">
+        <h2>Student Profile</h2>
+
+        <img src="{{ url_for('static', filename='images/student.png') }}"
+             width="100"
+             style="border-radius:50%;">
+
+        <h3>{{ session['username'] }}</h3>
+
+        <p><b>Roll No:</b> 2024</p>
+        <p><b>Department:</b> CSE (AI & ML)</p>
+        <p><b>Semester:</b> IV</p>
+    </div>
+
+    <!-- Timetable -->
+    <div class="box">
+        <h2>Today's Timetable</h2>
+
+        <table>
+            <tr>
+                <td>09:00 AM</td>
+                <td>Artificial Intelligence</td>
+            </tr>
+            <tr>
+                <td>11:00 AM</td>
+                <td>Machine Learning</td>
+            </tr>
+            <tr>
+                <td>02:00 PM</td>
+                <td>Computer Networks</td>
+            </tr>
+        </table>
+    </div>
+
+    <!-- Notifications -->
+    <div class="box">
+        <h2>Recent Notifications</h2>
+
+        <ul>
+            <li>✔ AI Marks Uploaded</li>
+            <li>✔ Assignment Due Tomorrow</li>
+            <li>✔ Mid Exam Starts Next Week</li>
+        </ul>
+    </div>
+
+    <!-- Quick Actions -->
+    <div class="box">
+        <h2>Quick Actions</h2>
+
+        <button class="action-btn" onclick="location.href='/attendance'">
+            Attendance
+        </button>
+
+        <button class="action-btn" onclick="location.href='/marks'">
+            Marks
+        </button>
+
+        <button class="action-btn" onclick="location.href='/timetable'">
+            Timetable
+        </button>
+
+        <button class="action-btn" onclick="location.href='/notifications'">
+            Notifications
+        </button>
+    </div>
+
+</div>
+
+{% endblock %}

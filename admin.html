@@ -1,0 +1,84 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h1>Admin Dashboard</h1>
+
+<div class="cards">
+
+    <div class="card blue">
+        <h3>Total Students</h3>
+        <h1>320</h1>
+    </div>
+
+    <div class="card green">
+        <h3>Faculty</h3>
+        <h1>28</h1>
+    </div>
+
+    <div class="card orange">
+        <h3>Departments</h3>
+        <h1>6</h1>
+    </div>
+
+    <div class="card red">
+        <h3>Pending Requests</h3>
+        <h1>12</h1>
+    </div>
+
+</div>
+
+<br>
+
+<div class="box">
+
+    <h2>Student Management</h2>
+
+    <button class="action-btn">Add Student</button>
+    <button class="action-btn">Update Student</button>
+    <button class="action-btn">Delete Student</button>
+    <button class="action-btn">View Students</button>
+
+</div>
+
+<br>
+
+<div class="box">
+
+    <h2>Recent Student List</h2>
+
+    <table class="table">
+
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Department</th>
+            <th>Semester</th>
+        </tr>
+
+        <tr>
+            <td>101</td>
+            <td>Anjan Sai</td>
+            <td>CSE (AI & ML)</td>
+            <td>IV</td>
+        </tr>
+
+        <tr>
+            <td>102</td>
+            <td>Rahul</td>
+            <td>CSE</td>
+            <td>IV</td>
+        </tr>
+
+        <tr>
+            <td>103</td>
+            <td>Keerthi</td>
+            <td>ECE</td>
+            <td>III</td>
+        </tr>
+
+    </table>
+
+</div>
+
+{% endblock %}

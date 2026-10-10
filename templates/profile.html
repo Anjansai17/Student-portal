@@ -1,0 +1,64 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h1>My Profile</h1>
+
+<div class="box">
+
+    <div style="text-align:center;">
+
+        <img src="{{ url_for('static', filename='images/student.png') }}"
+             alt="Student"
+             class="profile-img">
+
+        <h2>{{ session['username'] }}</h2>
+        <p>CSE (AI & ML)</p>
+
+    </div>
+
+    <br>
+
+    <table class="table">
+
+        <tr>
+            <th>Roll Number</th>
+            <td>2024AIML001</td>
+        </tr>
+
+        <tr>
+            <th>Department</th>
+            <td>CSE (AI & ML)</td>
+        </tr>
+
+        <tr>
+            <th>Semester</th>
+            <td>IV</td>
+        </tr>
+
+        <tr>
+            <th>Email</th>
+            <td>student@gmail.com</td>
+        </tr>
+
+        <tr>
+            <th>Phone</th>
+            <td>9876543210</td>
+        </tr>
+
+        <tr>
+            <th>CGPA</th>
+            <td>8.40</td>
+        </tr>
+
+    </table>
+
+    <br>
+
+    <button class="action-btn">
+        <i class="fas fa-user-edit"></i> Edit Profile
+    </button>
+
+</div>
+
+{% endblock %}

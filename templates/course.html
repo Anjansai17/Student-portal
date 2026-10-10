@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h1>📚 My Courses</h1>
+
+<div class="cards">
+
+    <div class="card blue">
+        <h2>🤖 Artificial Intelligence</h2>
+        <p>Progress: 80%</p>
+
+        <a href="/course/ai">
+            <button class="action-btn">Open Course</button>
+        </a>
+    </div>
+
+    <div class="card green">
+        <h2>📈 Machine Learning</h2>
+        <p>Progress: 65%</p>
+
+        <a href="/course/ml">
+            <button class="action-btn">Open Course</button>
+        </a>
+    </div>
+
+    <div class="card orange">
+        <h2>🌐 Computer Networks</h2>
+        <p>Progress: 72%</p>
+
+        <a href="/course/cn">
+            <button class="action-btn">Open Course</button>
+        </a>
+    </div>
+
+    <div class="card red">
+        <h2>🔒 Cyber Security</h2>
+        <p>Progress: 91%</p>
+
+        <a href="/course/cs">
+            <button class="action-btn">Open Course</button>
+        </a>
+    </div>
+
+</div>
+
+{% endblock %}

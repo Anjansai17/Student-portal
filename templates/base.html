@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart College ERP</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+
+<body>
+
+<!-- Sidebar -->
+<div class="sidebar">
+
+    <div class="logo">
+        <h2>🎓 Smart ERP</h2>
+    </div>
+
+    <a href="/dashboard"><i class="fas fa-home"></i> Dashboard</a>
+    <a href="/profile"><i class="fas fa-user"></i> Profile</a>
+    <a href="/attendance"><i class="fas fa-calendar-check"></i> Attendance</a>
+    <a href="/marks"><i class="fas fa-chart-bar"></i> Marks</a>
+    <a href="/timetable"><i class="fas fa-clock"></i> Timetable</a>
+    <a href="/notifications"><i class="fas fa-bell"></i> Notifications</a>
+    <a href="/admin">
+    <i class="fas fa-user-shield"></i> Admin</a>
+    <hr>
+
+    <a href="/logout"><i class="fas fa-right-from-bracket"></i> Logout</a>
+    <a href="/settings">
+    <i class="fas fa-gear"></i> Settings
+</a>
+<a href="/courses">
+    <i class="fas fa-book"></i> My Courses
+</a>
+</div>
+
+<!-- Main Content -->
+<div class="main">
+
+    <!-- Top Navigation -->
+    <div class="topbar">
+
+        <div class="search-box">
+            <i class="fas fa-search"></i>
+            <input type="text" placeholder="Search...">
+        </div>
+
+        <div class="top-right">
+
+            <i class="fas fa-bell"></i>
+
+            <i class="fas fa-moon"></i>
+
+            <div class="profile-mini">
+
+                <img src="{{ url_for('static', filename='images/student.png') }}"
+                     alt="Student">
+
+                <div>
+                    <h4>{{ session['username'] }}</h4>
+                    <small>Student</small>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Page Content -->
+    {% block content %}
+    {% endblock %}
+
+</div>
+
+<!-- Chart.js -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<!-- JavaScript -->
+<script src="{{ url_for('static', filename='js/script.js') }}"></script>
+
+</body>
+</html>

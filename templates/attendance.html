@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h1>Attendance</h1>
+
+<div class="box">
+
+    <h2>Attendance Overview</h2>
+
+    <div class="chart-container">
+    <canvas id="attendanceChart"></canvas>
+</div>
+
+    <br>
+
+    <table>
+
+        <tr>
+            <th>Subject</th>
+            <th>Attendance</th>
+        </tr>
+
+        <tr>
+            <td>Artificial Intelligence</td>
+            <td>92%</td>
+        </tr>
+
+        <tr>
+            <td>Machine Learning</td>
+            <td>87%</td>
+        </tr>
+
+        <tr>
+            <td>Computer Networks</td>
+            <td>89%</td>
+        </tr>
+
+        <tr>
+            <td>Cyber Security</td>
+            <td>91%</td>
+        </tr>
+
+    </table>
+
+</div>
+
+{% endblock %}
