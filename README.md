@@ -2,19 +2,19 @@
 
 A web-based Student Portal developed using Python, Flask, HTML, CSS, and JavaScript. It provides a simple interface for students to access academic information and student-related services.
 
-## 🚀 Features
+##  Features
 
-- 📊 Student Dashboard
-- 👤 Student Profile Management
-- 📅 Timetable Management
-- 📝 Attendance Tracking
-- 📚 AI Learning Materials
-- 🎥 AI Learning Videos
-- 📋 Assignment Management
-- 🧠 AI Quizzes
-- 📈 Marks and Academic Information
-- 🔔 Notifications
-- 🔐 Login and Registration Pages
+-  Student Dashboard
+-  Student Profile Management
+-  Timetable Management
+-  Attendance Tracking
+-  AI Learning Materials
+-  AI Learning Videos
+-  Assignment Management
+-  AI Quizzes
+-  Marks and Academic Information
+-  Notifications
+-  Login and Registration Pages
 
 ## 🛠️ Technologies Used
 
@@ -23,7 +23,7 @@ A web-based Student Portal developed using Python, Flask, HTML, CSS, and JavaScr
 - **Database:** SQLite
 - **Tools:** Visual Studio Code, Git, GitHub
 
-## 📁 Project Structure
+##  Project Structure
 
 ```text
 Student-portal/
